@@ -1,0 +1,155 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Software Process}
+
+\maketitle
+
+\begin{abstract}
+	A sequence of steps to carry out a software developement effort in order
+	to effectively and predictably deliver a solution to proposed
+	requirements is detail. The described process is a lightweight
+	iterative process. It can be succinctly described as a step of initial
+	requirement definition followed by a series of sprints emulating small
+	waterfall lifecycles where deficiencies in the process application,
+	requirements, and design are noted and repaired in between sprints. Once
+	the requirements have been met, a final deliver step is taken. The
+	entire process is meant to be followed from the beginning to the end of
+	a major version. Artifacts for different versions should be labelled
+	by the version and contain a complete set of process artifacts.
+\end{abstract}
+
+\section{Process}
+
+\begin{enumerate}
+	\item Requirements analysis \begin{itemize}
+		\item Activities: \begin{enumerate}
+			\item Elicit requirements: Collect requirements for
+				entire project.
+			\item Document requirements: More specifically design
+				and document requirements. Add as issues on
+				Github under version milestone.
+			\item Specify delivery procedure: Document in what way
+				the project will be delivered.
+			\item High level design: Specify the high-level design
+				of the solution.
+			\item Determine success model: List criteria that when
+				met says the project is complete.
+			\item Estimate success time: Attempt to determine a time
+				until success model is met.
+			\item Prototype to gain more insight into other
+				activities.
+		\end{enumerate}
+			\item Artifacts: \begin{itemize}
+				\item doc/learned.pdf: Update learned
+					information.
+				\item doc/requirements.pdf: Record
+					requirements in terms of use cases, user
+					stories, or other medium along with
+					deliver procedure and success model.
+				\item doc/design.pdf: Specify solution design,
+					including visual design, architecture,
+					and collaboration along with tools and
+					languages.
+				\item README.md: Short description of the
+					projectand what requirements it intends
+					to meet.
+				\item LICENSE: Use conditions for the project.
+				\item Prototype: Prototyped code.
+			\end{itemize}
+		\end{itemize}
+	\item Waterfall Iterations (Loop while success model not met)
+		\begin{itemize}
+			\item Activities: \begin{enumerate}
+				\item Requirements analysis: Specify and refine
+					requirements to be completed during this
+					iteration. Update Github issues with
+					deadline and information.
+				\item Design: Document a potential solution for
+					the requirements. Choose languages and
+					build tools. Report validation and
+					verification strategy.
+				\item Code: Articulate solution into code.
+				\item Validate and verify: Make sure
+					requirements were met and requirements
+					were met correctly using strategy
+					specified in design. Review code. Split
+					into patterns if useful. Mark Github
+					issues as completed.
+			\end{enumerate}
+			\item Artifacts: \begin{itemize}
+				\item doc/learned.pdf: Update learned
+					information.
+				\item doc/requirements.pdf: Include more
+					specific, formed, or new requirements.
+				\item doc/design.pdf: Include more concrete
+					information about design.
+				\item README.md: Discuss new relevant
+					information.
+			\end{itemize}
+		\end{itemize}
+	\item Deliver \begin{itemize}
+		\item Activites: \begin{enumerate}
+			\item Validate and verify: Ensure the correct problem
+				has been solved and has been solved correctly.
+			\item Execute delivery procedure: Deliver the project to
+				the intended audience with the intended
+				strategy.
+		\end{enumerate}
+		\item Artifacts: \begin{itemize}
+			\item doc/learned.pdf: Update learned
+				information.
+			\item doc/requirements.pdf: Finalized requirements
+				document.
+			\item doc/design.pdf: Finalized design document.
+			\item README.md: Finalized README.md.
+		\end{itemize}
+	\end{itemize}
+\end{enumerate}
+
+\section{Tools}
+
+\begin{itemize}
+	\item Build tools: \begin{itemize}
+		\item Make
+		\item npm
+	\end{itemize}
+	\item Version control: \begin{itemize}
+		\item Git
+		\item Github
+	\end{itemize}
+	\item Editors: \begin{itemize}
+		\item Vim: Small or independent projects.
+		\item JetBrains: Larger or team based projects. Choose
+			based on language.
+	\end{itemize}
+\end{itemize}
+
+\section{Versions}
+
+Semantic versioning should always be used. Each major and minor version should
+be tagged in version control. Semantic versions are of the form x.y.z where x is
+the major version, y the minor version, and z the patch version. Major versions
+are for breaking changes. Minor versions are when backwards compatabile
+functionality is added. Patch versionsare for backwards compatible bug fixes.
+
+\section{Languages}
+
+\begin{itemize}
+	\item General Purpose: Go
+	\item Application Development: Java
+	\item Web Development: Javascript, HTML, CSS, Javascript
+		\begin{itemize}
+		\item Libraries: \begin{itemize}
+			\item SASS
+			\item Angular2
+			\item Typescript
+		\end{itemize}
+		\end{itemize}
+	\item Prototyping and Glue: Python
+	\item High Performance: C / C++
+\end{itemize}
+
+\end{document}
